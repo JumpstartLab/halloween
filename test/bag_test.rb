@@ -10,10 +10,12 @@ class BagTest < Minitest::Test
   end
 
   def test_empty_bag_has_zero_candies
+    skip
     assert_equal 0, Bag.new.count
   end
 
   def test_bag_takes_candy
+    skip
     bag = Bag.new
     candy = Candy.new("Nerds")
     bag << candy
@@ -21,12 +23,14 @@ class BagTest < Minitest::Test
   end
 
   def test_empty_bag_has_zero_candies
+    skip
     bag = Bag.new
     bag << Candy.new("Caramelized Almonds")
     assert_equal 1, bag.count
   end
 
   def test_bag_contains_candies
+    skip
     bag = Bag.new
     candy = Candy.new("Sour frogs")
     bag << candy
@@ -34,6 +38,7 @@ class BagTest < Minitest::Test
   end
 
   def test_bag_contains_candies_and_candies_have_a_type
+    skip
     bag = Bag.new
     candy = Candy.new("Hershey's Kisses")
     bag << candy
@@ -46,6 +51,7 @@ class BagTest < Minitest::Test
   end
 
   def test_ask_bag_if_it_contains_a_particular_type_of_candy
+    skip
     bag = Bag.new
     bag << Candy.new("Lindt chocolate")
 
@@ -54,6 +60,7 @@ class BagTest < Minitest::Test
   end
 
   def test_get_a_particular_type_of_candy
+    skip
     bag = Bag.new
     bag << Candy.new("Jawbreaker")
     bag << Candy.new("Jawbreaker")
@@ -64,6 +71,7 @@ class BagTest < Minitest::Test
   end
 
   def test_grabbing_candy_removes_it_from_the_bag
+    skip
     bag = Bag.new
     bag << Candy.new("Reese's Pieces")
     bag << Candy.new("Junior Mints")
@@ -75,6 +83,7 @@ class BagTest < Minitest::Test
   end
 
   def test_take_a_number_of_candies_from_the_bag
+    skip
     bag = Bag.new
     bag << Candy.new("Swedish Fish")
     bag << Candy.new("Milky Way")
@@ -88,6 +97,7 @@ class BagTest < Minitest::Test
   end
 
   def test_take_one_candy
+    skip
     bag = Bag.new
     bag << Candy.new("Lifesavers")
 
