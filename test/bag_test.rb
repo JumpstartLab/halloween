@@ -22,7 +22,7 @@ class BagTest < Minitest::Test
     refute bag.empty?
   end
 
-  def test_empty_bag_has_zero_candies
+  def test_bag_counts_candies
     skip
     bag = Bag.new
     bag << Candy.new("Caramelized Almonds")
