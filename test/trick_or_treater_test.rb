@@ -14,17 +14,20 @@ class TrickOrTreaterTest < Minitest::Test
   end
 
   def test_has_an_empty_bag_by_default
+    skip
     trick_or_treater = TrickOrTreater.new(Costume.new("Alien"))
     refute trick_or_treater.has_candy?
   end
 
   def test_gets_candies
+    skip
     trick_or_treater = TrickOrTreater.new(Costume.new("Spaceship Mechanic"))
     trick_or_treater.bag << Candy.new("Gummy bears")
     assert trick_or_treater.has_candy?
   end
 
   def test_counts_candies
+    skip
     trick_or_treater = TrickOrTreater.new(Costume.new("Spaceship Mechanic"))
     assert 0, trick_or_treater.candy_count
     trick_or_treater.bag << Candy.new("Gummy bears")
@@ -32,6 +35,7 @@ class TrickOrTreaterTest < Minitest::Test
   end
 
   def test_eats_candies
+    skip
     trick_or_treater = TrickOrTreater.new(Costume.new("Baron"))
     trick_or_treater.bag << Candy.new("Gummy worms")
     trick_or_treater.bag << Candy.new("Liquorice")

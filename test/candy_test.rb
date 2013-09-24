@@ -10,6 +10,7 @@ class CandyTest < Minitest::Test
   end
 
   def test_other_type_of_candy
+    skip
     candy = Candy.new("Mars")
     assert_equal candy.type, "Mars"
   end
