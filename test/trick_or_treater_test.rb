@@ -42,9 +42,9 @@ class TrickOrTreaterTest < Minitest::Test
   def test_counts_candies
     skip
     trick_or_treater = TrickOrTreater.new(Costume.new("Spaceship Mechanic"))
-    assert 0, trick_or_treater.candy_count
+    assert_equal 0, trick_or_treater.candy_count
     trick_or_treater.bag << Candy.new("Gummy bears")
-    assert 1, trick_or_treater.candy_count
+    assert_equal 1, trick_or_treater.candy_count
   end
 
   def test_eats_candies
