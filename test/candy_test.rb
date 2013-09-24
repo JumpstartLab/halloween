@@ -13,5 +13,15 @@ class CandyTest < Minitest::Test
     candy = Candy.new("Mars")
     assert_equal candy.type, "Mars"
   end
+
+  def test_amount_of_sugar_is_100_by_default
+    candy = Candy.new("Circus Peanuts")
+    assert_equal 100, candy.sugar
+  end
+
+  def test_amount_of_sugar_is_configurable
+    candy = Candy.new("Pop Rocks", 78)
+    assert_equal 78, candy.sugar
+  end
 end
 

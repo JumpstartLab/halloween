@@ -44,5 +44,21 @@ class TrickOrTreaterTest < Minitest::Test
     trick_or_treater.eat
     assert_equal 0, trick_or_treater.candy_count
   end
+
+  def test_sugar_level_starts_at_zero
+    trick_or_treater = TrickOrTreater.new(Costume.new("Hobbit"))
+    assert_equal 0, trick_or_treater.sugar_level
+  end
+
+  def test_eating_candies_increases_the_sugar_level
+    trick_or_treater = TrickOrTreater.new(Costume.new("Borg"))
+    trick_or_treater.bag << Candy.new("Candy Canes", 88)
+    trick_or_treater.bag << Candy.new("Dum Dum Pops", 83)
+    trick_or_treater.bag << Candy.new("Lollipops", 71)
+    trick_or_treater.eat
+    trick_or_treater.eat
+    trick_or_treater.eat
+    assert_equal 242, trick_or_treater.sugar_level
+  end
 end
 
