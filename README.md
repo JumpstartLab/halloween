@@ -12,6 +12,8 @@ $ git clone git@github.com:JumpstartLab/halloween.git
 
 ## Exercise 1
 
+If you'd like to be walked through the exercise, check out the [Objects and Methods](http://tutorials.jumpstartlab.com/academy/workshops/objects_and_methods.html) workshop on the Jumpstart Lab tutorials site.
+
 Check out the exercise-1 branch:
 
 ```bash
