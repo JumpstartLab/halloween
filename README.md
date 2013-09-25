@@ -17,7 +17,7 @@ If you'd like to be walked through the exercise, check out the [Objects and Meth
 Check out the exercise-1 branch:
 
 ```bash
-$ git checkout exercise-1
+$ git checkout -t origin/exercise-1
 ```
 
 Make the tests pass in the following sequence:
@@ -38,7 +38,7 @@ $ ruby test/bag_test.rb
 Check out the exercise-2 branch:
 
 ```bash
-$ git checkout exercise-2
+$ git checkout -t origin/exercise-2
 ```
 
 Each object has become a little bit more complex.
